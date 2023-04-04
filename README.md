@@ -15,6 +15,7 @@ O projeto consiste em uma página responsiva utilizando o framework Bootstrap 5.
 
 1.  Clone o repositório em sua máquina local
 2.  Abra o arquivo index.html em seu navegador
+
 OU
 Acesse o Link
 [Link para o Projeto ](https://winx.marcosgabrielmirandaflor.com.br/){:target="_blank"}
