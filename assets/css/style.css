@@ -1,0 +1,334 @@
+/* Reset CSS */
+
+/* Definir valores padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* Corrigir inconsistências de fonte */
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+/* Remover decoração de link */
+a {
+  text-decoration: none;
+}
+
+/* Remover estilo de lista */
+ul, ol {
+  list-style: disc;
+}
+
+/* Definir cor de fundo padrão */
+body {
+  background-color: #ffffff;
+  
+  background: #FFFFFF url("../imagens/fundo-para-dahsboard-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Definir cor padrão do texto */
+body, input, textarea {
+  color: #000000;
+}
+
+/* Remover bordas padrão */
+img, iframe, video, canvas, audio, svg, input, textarea, button {
+  border: none;
+  outline: none;
+}
+/* Variaveis*/
+
+/* azul */
+:root {
+  --cor-primeira-: #001943;
+  --cor-segunda-: #acb1c0;
+  --cor-terceira-:#f5f5f7;
+}
+
+/* Nav menu */
+  
+  .imagem-usuario{
+    width: 40px;;
+  }
+  .menu-inteiro{
+    padding-right: 2vw;
+  }
+ 
+/* Icones header */
+  i.bi.bi-person, i.bi.bi-bell{
+    color:var(--cor-primeira-);;
+    font-size: 20px;
+
+  }
+
+/* Itens do menu*/
+  li.nav-item{
+    color: var(--cor-primeira-);
+    font-weight: 450;
+    font-size: 18px;
+    padding-right: 9px;
+    list-style: none;
+  }
+  .nav-item{
+    color: var(--cor-primeira-);
+  }
+
+/* botao  */
+
+  .botao{
+    background: var(--cor-primeira-);
+    color: white;
+  }
+  /* Tirando botão do Dropdown */
+  .dropdown-toggle-menu::after {
+    display: none;
+  }
+   /*Container Dashboard*/
+   .dashboard{
+    padding-top: 100px;
+  }
+  /* Personagem do card */
+  .personagem{
+    width: 12vw;
+    transform: translate(0%, -32%);
+    padding-left: 10%;
+  }
+  
+/* Cards conteiner */
+.cards-container{
+  margin-right: 0; 
+}
+
+/*Cards */
+.cards{
+  background: var(--cor-terceira-);
+  border-radius: 15px;
+  padding-left: 5%;
+  margin-right: 0%;
+  display: inline-flex;
+  
+}
+
+/* Card Grande */
+.cards.grande-graficos{
+  margin-top: 20px;  
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: inline-flex;
+}
+/*Fontes com mesma cor */
+ .saudacao, .companhia, .tres-pontos,.card-menor-number,.card-menor-txt-primeiro,.visao_geral,.campaign-porcentagem,.direct-porcentagem,.numeros-ativos-hj,.graficos-ativos-numeros{
+  color: var(--cor-primeira-);
+}
+
+/* Card 1 */
+.saudacao{
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.companhia{
+  font-size: 18px;
+}
+.tres-pontos{
+  font-size: 70px;
+  line-height: 0;
+  padding-right: 5px;
+}
+.pontos{
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.0;
+}
+.score{
+  font-size: 18px;
+}
+
+/*Cards linha 2 */
+.card-menor-number{
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.card-menor-txt-primeiro{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+.card-menor-txt-segundo{
+  font-size: 15px;
+  color: var(--cor-segunda-);
+  padding-bottom: 15px;
+}
+.cards-primeira-coluna{
+  display: flex;
+  height: 9vw;
+}
+
+.cards.pequeno{
+  margin-top: 20px;
+  text-align: center;
+  height: 12vw;
+
+}
+
+/*Card Grande */
+
+.dropdown-card-grande{
+  color:var(--cor-segunda-);
+}
+.ponto-card-grande{
+  
+  font-size: 80px; 
+  line-height: 0;
+  color:var(--cor-primeira-);
+}
+i.bi.bi-dot.icone {
+  font-size: 20px;
+  line-height: 0px;
+  vertical-align: middle;
+  height: 20px!important;
+  height: 24px;
+  width: 24px;
+}
+.icone {
+  height: 24px;
+  width: 24px;
+}
+.dropdown-card-grande{
+  font-size: 15px;
+}
+.visao_geral{
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.campaign{
+  color:var(--cor-segunda-);
+  font-size: 15px;
+}
+.campaign-porcentagem{
+  font-size: 18px;
+  font-weight: 600;
+}
+.grafico-ativos{
+  width: 80%;
+}
+.numeros-ativos-hj{
+
+font-size: 50px;
+}
+.txt-ativos-hj{
+  color: var(--cor-segunda-);
+  font-size: 15px;
+}
+.graficos-ativos-numeros{
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 130%;
+}
+.graficos-ativos-txt{
+  font-size: 15px;
+  color:var(--cor-segunda-);
+}
+.grafico-1{
+  width: 8vw;
+}
+.numero-cobrinha{
+  color: #6d717e;
+  font-size: 20px;
+}
+.txt-cobrinha{
+  color:var(--cor-segunda-);
+  font-size: 13px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .cards{
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    display: inline-flex;
+  }
+  .personagem {
+    width: 15vw;
+    transform: translate(0%, 0%);
+    padding-left: 10%;
+  }
+  .cards.grande-graficos{
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .visao_geral{
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  .graficos-ativos-numeros{
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  body{
+    background-size: 110vw;
+  }
+  
+  .cards{
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: inline-flex;
+    width: 100%;
+  }
+  .cards-container{
+    margin-top: 20px;
+  }
+  .cards.pequeno{
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+  }
+  .companhia{
+    font-size: 15px;
+  }
+  .personagem{
+    width: 20vw;  
+    transform: scale(1.0);
+  }
+  .cards.grande-graficos{
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .grafico-1{
+    width: 50vw;
+  }
+  .menu-inteiro{
+    background: white;
+    border-radius: 10%;
+  }
+  .visao_geral{
+    text-align: center;
+    font-size: 20px;
+  }
+  
+
+  
+}
+
+  
+
+
+ 
+
+ 
